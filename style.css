@@ -1,0 +1,13 @@
+p {
+    font-family: cursive;
+}/* Formato de texto */
+
+.color {
+    color: blue;
+}
+
+table, th, td {
+    border: 1px solid black; /* Crear borde */
+    border-collapse: collapse; /* Borde sin espacio */
+    text-align: center; /* Centrar texto */
+}

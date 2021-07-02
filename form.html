@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form  action="#" method=""><!-- Crea un formulario -->
+        <fieldset><!-- Encierra los input en un recuadro -->
+            <legend>form one</legend><!-- Agrega un nombre al recuadro -->
+
+            <label for="texto">text</label><!-- Asigna un nombre al campo con el id -->
+            <input type="text" name="" id="texto" ><!-- Campo texto -->
+            
+            <label for="numero">number</label>
+            <input type="number" name="" id="numero"><!-- Campo númerico -->
+            
+            <label for="correo">email</label>
+            <input type="email" name="" id="correo" size="40"><!-- Campo email -->
+            
+            <label for="contraseña" >password</label>
+            <input type="password" name="" id="contraseña"><!-- Campo contraseña -->
+
+            <label for="telefono">tel</label>
+            <input type="tel" name="" id="telefono"><!-- Campo teléfonico -->
+            
+            <label for="fecha">date</label>
+            <input type="date" name="" id="fecha"><!-- Campo año, mes y día -->
+            
+            <label for="fecha_local">datetime-local</label>
+            <input type="datetime-local" name="" id="fecha_local"><!-- Campo año, mes, día y hora -->
+
+            <label for="mes">month</label>
+            <input type="month" name="" id="mes"><!-- Campo mes -->
+            
+            <label for="semana">week</label>
+            <input type="week" name="" id="semana"><!-- Campo semana -->
+            
+            <label for="hora">time</label>
+            <input type="time" name="" id="hora"><!-- Campo hora -->
+
+            <label for="opcion">option</label>
+            <select name="" id="opcion"><!-- Lista de opciones desplegable -->
+                <option value="option one">option one</option><!-- Campo opción -->
+                <option value="">option two</option>
+            </select>
+
+            <label for="grupo_opcion">optgroup</label>
+            <select name="" id="grupo_opcion">
+                <optgroup label="option one"><!-- Grupo de opciones relacionadas -->
+                    <option value="">option</option>
+                    <option value="">option</option>
+                </optgroup>
+                <optgroup label="option two">
+                    <option value="">option</option>
+                    <option value="">option</option>
+                </optgroup>
+            </select>
+
+            <input type="radio" name="igual" id="rad_o" value="radio one"><!-- Campo radio _ Deben tener el mismo name _ Solo se elige uno -->
+            <label for="rad_o">radio one</label>
+            <input type="radio" name="igual" id="rad_tw" value="radio two">
+            <label for="rad_tw">radio two</label>
+            <input type="radio" name="igual" id="rad_t" value="radio three">
+            <label for="rad_t">radio three</label>
+
+            <input type="checkbox" name="b_" id="b_o" value="box one"><!-- Campo caja _ Deben tener el mismo name _ Pueden elegirse varios -->
+            <label for="b_o">box one</label>
+            <input type="checkbox" name="b_" id="b_tw" value="box two">
+            <label for="b_tw">box two</label>
+            <input type="checkbox" name="b_" id="b_t" value="box three">
+            <label for="b_t">box three</label>
+            <input type="checkbox" name="b_" id="b_f" value="box four">
+            <label for="b_f">box four</label>
+
+            <label for="pre_">pre-option</label>
+            <input list="pre" id="pre_"><!-- Campo de respuestas predifinidas -->
+            <datalist id="pre">
+                <option value="one"></option>
+                <option value="two"></option>
+                <option value="three"></option>
+            </datalist>
+
+            <label for="buscar">search</label>
+            <input type="search" name="" id="buscar"><!-- Campo buscar -->
+
+            <input type="image" src="" alt=""><!-- Campo imagen -->
+
+            <label for="rango">range</label>
+            <input type="range" name="" id="rango"><!-- Campo rango -->
+
+            <label for="url">url</label>
+            <input type="url" name="" id="url"><!-- Campo url -->
+
+            <label for="archivo">file</label>
+            <input type="file" value="" id="archivo"><!-- Campo archivo -->
+
+            <input type="hidden" value=""><!-- Campo oculto -->
+
+            <label for="color">color</label>
+            <input type="color" name="" id="color"><!-- Campo color -->
+
+            <input type="button" value="console" onclick="alert('alert button')"><!-- Campo botón _ Mensaje de alerta -->
+
+            <label for="progress">progress</label>
+            <progress id="progress" value="20" max="100"></progress><!-- Representa el progreso de una tarea -->
+
+            <input type="submit" value="submit"><!-- Boton de envío -->
+            <input type="reset" value="reset"><!-- Boton de reseteo -->
+
+        </fieldset>
+    </form>
+
+    <form action="" method="get" autocomplete="off"><!-- Action: Lugar a donde se van a enviar los datos _ Method: Forma de envio _ POST: Datos privados _ GET: Datos publicos _ Autocomplete: Autocompletar los campos -->
+        <fieldset>
+            <legend>form two</legend>
+
+            <label for="txt">text</label>
+            <input type="text" name="" id="txt" maxlength="10" minlength="5" placeholder="text field" autofocus required><!-- Maxl. y Minl.: Restricciones de texto Maximo y Minimo de carácteres _ Placeholder: Breve descripción del campo _ Autofocus: La pagina se enfoca primero a este input _ Required: Campo Requerido -->
+
+            <label for="sz">text two</label>
+            <input type="text" name="" id="" size="5"><!-- Size: Tamaño del campo por caráteres -->
+            
+            <label for="nm">number</label>
+            <input type="number" name="" id="nm" max="10" min="4"><!-- Max y Min: Restricciones númericas Maximo y Minimo de números  -->
+
+            <label for="fech">date</label>
+            <input type="date" name="" id="fech" max="2021-12-31" min="2021-01-01"><!-- Max y Min: Restricciones de fechas Maximo y Minimo -->
+
+            <label for="hor">time</label>
+            <input type="time" name="" id="hor" max="14:00" min="2:00"><!-- Max y Min: Restricciones de horas Maximo y Minimo -->
+
+            <input type="radio" name="ig" id="rad_one" value="radio one" checked><!-- Campo radio _ Checked: Marcado por defecto -->
+            <label for="rad_one">radio one</label>
+            <input type="radio" name="ig" id="rad_two" value="radio two">
+            <label for="rad_two">radio two</label>
+            <input type="radio" name="ig" id="rad_three" value="radio three">
+            <label for="rad_three">radio three</label>
+
+            <input type="checkbox" name="b_number" id="b_one" value="box one" checked><!-- Campo caja _ Checked: Marcado por defecto -->
+            <label for="b_one">box one</label>
+            <input type="checkbox" name="b_number" id="b_two" value="box two">
+            <label for="b_two">box two</label>
+            <input type="checkbox" name="b_number" id="b_three" value="box three">
+            <label for="b_three">box three</label>
+            <input type="checkbox" name="b_number" id="b_four" value="box four">
+            <label for="b_four">box four</label>
+
+            <label for="sel">select</label>
+            <select name="" id="sel" multiple><!-- Multiple: Selecciona varias opciones _ Ctrl -->
+                <option value="">option one</option>
+                <option value="" selected>option two</option><!-- Selected: Selecciona la opcion por defecto -->
+                <option value="">option three</option>
+            </select>
+
+            <label for="textare">textarea</label>
+            <textarea name="" id="textare" cols="30" rows="10"></textarea><!-- Cols: Define el ancho _ Rows: Define el largo -->
+
+            <label for="rang">range</label>
+            <input type="range" name="" id="rang" max="5"><!-- Max y Min: Restricciones de rango Maximo y Minimo -->
+            
+            <label for="rea">readonly</label>
+            <input type="text" id="rea" value="readonly" readonly><!-- Campo solo lectura -->
+
+            <label for="disa">disable</label>
+            <input type="text" id="disa" value="disabled" disabled><!-- Campo desactivado -->
+
+            <label for="patron">pattern</label>
+            <input type="text" id="patron" pattern="[A-Za-z]{3}"><!-- Campo con expresiones regulares _ Restricciones personalizadas -->
+
+            <label for="paso">step</label>
+            <input type="number" name="" id="paso" step="2"><!-- Step: Paso a paso _ 2 en 2 -->
+
+            <label for="mer">Diks C:</label>
+            <meter id="mer" min="0" max="100" value="100" low="30" optimum="50" high="100"></meter><!-- Define una medida escalar dentro de un rango conocido -->
+
+            <label for="archiv">file</label>
+            <input type="file" value="" id="archiv" accept="image/png, image/jpeg"><!-- Accept: Solo acepta los valores asignado -->
+
+            <input type="reset" value="reset">
+            <input type="submit" value="submit">
+        
+        </fieldset>
+    </form>
+    
+</body>
+
+</html>

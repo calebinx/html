@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <table><!-- Crea una tabla -->
+        <caption>title</caption><!-- Crea un titulo -->
+        <thead><!-- Cabecera de la tabla-->
+            <tr><!-- Crea una fila-->
+                <th>title one</th><!-- Crea una columna con negrita-->
+                <th>title two</th>
+                <th>title three</th>
+                <th>title four</th>
+                <th>title five</th>
+            </tr>
+        </thead>
+
+        <tbody><!-- Contenido de la tabla -->
+            <tr>
+                <td>text.</td><!-- Crea una columna -->
+                <td>text.</td>
+                <td>text.</td>
+                <td>text.</td>
+                <td rowspan="2">text.rowspan</td><!-- Abarca más filas  -->
+            </tr>
+            <tr>
+                <td>text.</td>
+                <td>text.</td>
+                <td>text.</td>
+                <td>text.</td>
+            </tr>
+            <tr>
+                <td>text.</td>
+                <td>text.</td>
+                <td>text.</td>
+                <td colspan="2">text.colspan</td><!-- Abarca más columnas  -->
+            </tr>
+        </tbody>
+
+        <tfoot><!-- Pie de la tabla -->
+            <tr>
+                <td colspan="5">text.colspan</td>
+            </tr>
+        </tfoot>
+    </table>    
+</body>
+
+</html>

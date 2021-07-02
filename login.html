@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/cangrejo.svg" type="image/x-icon">
+    <title>Formuarios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+
+    <main>
+        <form action="" method="POST">
+            <fieldset id="ini">
+                <legend>Iniciar sección</legend>
+
+                <label for="one">Usuario</label><br>
+                <input type="text" name="user" id="one" placeholder="Ingresa el usuario" required><br>
+
+                <label for="two">Contraseña</label><br>
+                <input type="password" name="password" id="two" placeholder="Ingresa la contraseña" required><br>
+
+                <input type="reset" value="Restablecer">
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+
+        <form action="" method="post">
+            <fieldset id="reg">
+                <legend>Registrarme</legend>
+
+                <label for="three">Usuario</label><br>
+                <input type="text" name="user" id="three" minlength="3" maxlength="10" required><br>
+
+                <label for="four">Contraseña</label><br>
+                <input type="password" name="password" id="four" minlength="8" maxlength="12" required><br>
+
+                <label for="five">Nombre</label><br>
+                <input type="text" name="name" id="five" minlength="3" maxlength="10" placeholder="Nombre del usuario" required><br>
+
+                <label for="six">Rol</label><br>
+                <select name="rol" id="six" required>
+                    <option value="">Selecciona tu rol</option>
+                    <option value="admin">Administrador</option>
+                    <option value="common">Común</option>
+                </select><br>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+
+        <form action="" method="post" autocomplete="off">
+            <fieldset id="not">
+                <legend>Notas</legend>
+
+                <label for="seven">Titulo</label><br>
+                <input type="text" name="title" id="seven" required><br>
+
+                <label for="eight">Contenido</label><br>
+                <input type="text" name="contents" id="eight" required><br>
+
+                <input type="hidden" name="user" value="_id:user">
+
+                <label for="nine">Publicar nota</label><br>
+                <select name="private" id="nine" required>
+                    <option value="">Seleccione</option>
+                    <option value="true">Si</option>
+                    <option value="false">No</option>
+                </select><br>
+
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <h1>Herramientas utilizadas</h1>
+        <ul>
+            <li>Html:5</li>
+        </ul>
+    </footer>
+</body>
+</html>

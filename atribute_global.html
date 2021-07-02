@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="color">text</p><!-- class="" : Dar estilo css -->
+    
+    <p id="tex">text</p><!-- id="" : Identificador unico _ Ver consola-->
+    
+    <p title="small text">text</p><!-- title="" : Describe el contenido con un pequeño recuadro-->
+    
+    <p id="text" data-example="example text">text</p><!-- data-* : Nos permite guardar algun valor en la etiquete html -->
+
+    <script>
+        const t = document.getElementById('tex')// Selecciona un elemento del documento por medio del valor del atributo id
+        console.log(t.textContent)// Mostrar el contenido del texto por consola
+        
+        const tx = document.getElementById('text')
+        console.log(tx.dataset.example)
+    </script>
+</body>
+
+</html>
